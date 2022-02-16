@@ -26,7 +26,7 @@
                                     class="form-control @error('judul_buku') is-invalid @enderror">
                                 @error('judul_buku')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ message }}</strong>
+                                        <strong>Masukan Judul Buku</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -35,7 +35,7 @@
                                 <input type="number" name="harga" class="form-control @error('harga') is-invalid @enderror">
                                 @error('harga')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ message }}</strong>
+                                        <strong>Masukan Harga Buku</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -44,7 +44,7 @@
                                 <input type="file" name="cover" class="form-control @error('cover') is-invalid @enderror">
                                 @error('cover')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>Masukan Cover Buku</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -54,7 +54,7 @@
                                     class="form-control @error('keterangan') is-invalid @enderror">
                                 @error('keterangan')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ message }}</strong>
+                                        <strong>Masukan Keterangan Buku</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -67,7 +67,7 @@
                                 </select>
                                 @error('id_kategori')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>Masukan Kategori Buku</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -77,7 +77,7 @@
                                     class="form-control @error('pengarang_buku') is-invalid @enderror">
                                 @error('pengarang_buku')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>Masukan Pengarang Buku</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -86,7 +86,7 @@
                                 <input type="number" name="stok" class="form-control @error('stok') is-invalid @enderror">
                                 @error('stok')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>Masukan Stok Buku</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -96,7 +96,7 @@
                                     class="form-control @error('tahun_terbit') is-invalid @enderror">
                                 @error('tahun_terbit')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>Masukan Tahun Terbit</strong>
                                     </span>
                                 @enderror
                             </div>

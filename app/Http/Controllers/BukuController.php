@@ -158,4 +158,12 @@ class BukuController extends Controller
         Alert::success('Success', 'Data deleted successfully');
         return redirect()->route('buku.index');
     }
+
+    public function bukunya()
+    {
+
+        $buku = buku::all();
+        return view('frontend.index', compact('buku'));
+
+    }
 }

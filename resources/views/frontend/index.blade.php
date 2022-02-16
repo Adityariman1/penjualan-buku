@@ -3,322 +3,284 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
 
     <title>Penjualan Buku</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}" />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="{{ asset('frontend/css/slick.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('frontend/css/slick-theme.css') }}" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="{{ asset('frontend/css/nouislider.min.css') }}" />
 
-    <!-- =======================================================
-  * Template Name: Hidayah - v4.7.0
-  * Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="{{ asset('frontend/css/font-awesome.min.css') }}">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <!-- MAIN HEADER -->
+        <div id="header">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#" class="logo">
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-inner-pages">
-        <div class="container d-flex align-items-center justify-content-between">
-
-            <h1 class="logo"><a href="index.html">Penjualan Buku</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link  scrollto" href="#portfolio">product</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-
-        </div>
-    </header><!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero">
-        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-            <div class="carousel-inner" role="listbox">
-
-                <!-- Slide 1 -->
-                <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
-                    <div class="carousel-container">
-                        <div class="container">
-                            <h2 class="animated fadeInDown">Welcome to <span><br>Aplikasi Penjualan Buku </span></h2>
-
+                            </a>
                         </div>
                     </div>
-                </div>
+                    <!-- /LOGO -->
 
-                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-                </a>
+                    <!-- SEARCH BAR -->
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
 
-            </div>
-    </section><!-- End Hero -->
-
-    <main id="main">
-
-
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
-            <div class="container-fluid">
-
-                <div class="section-title">
-
-                    <h3>Check our <span>Toko Buku</span></h3>
-                    <p>Menjual Buku Buku Horor Pilihan Ternama Di Indonesia.</p>
-                </div>
-
-                <div class="row portfolio-container justify-content-center">
-
-                    <div class="col-xl-10">
-                        <div class="row">
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/img/portfolio/KTJ.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h4>App 1</h4>
-                                        <p>App</p>
-                                        <div class="portfolio-links">
-                                            <a href="assets/img/portfolio/KTJ.jpg" data-gallery="portfolioGallery"
-                                                class="portfolio-lightbox" title="App 1"><i
-                                                    class="bx bx-plus"></i></a>
-
-                                            <a href="frontend.portfolio-details.html" title="More Details"><i
-                                                    class="bx bx-link"></i></a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End portfolio item -->
-
+                                <input class="input" placeholder="Search here">
+                                <button class="search-btn">Search</button>
+                            </form>
                         </div>
                     </div>
+                    <!-- /SEARCH BAR -->
 
+                    <!-- ACCOUNT -->
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+                            <!-- Cart -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>Your Cart</span>
+                                </a>
+                                <div class="cart-dropdown">
+                                    <div class="cart-list">
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="{{ asset('image/buku/') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="cart-btns">
+                                            <a href="keranjang.index">View Cart</a>
+                                            <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Cart -->
+
+                                <!-- Menu Toogle -->
+                                <div class="menu-toggle">
+                                    <a href="#">
+                                        <i class="fa fa-bars"></i>
+                                        <span>Menu</span>
+                                    </a>
+                                </div>
+                                <!-- /Menu Toogle -->
+                            </div>
+                        </div>
+                        <!-- /ACCOUNT -->
+                    </div>
+                    <!-- row -->
                 </div>
-
+                <!-- container -->
             </div>
-        </section><!-- End Portfolio Section -->
+            <!-- /MAIN HEADER -->
+    </header>
+    <!-- /HEADER -->
 
-    </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-
-
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+        <!-- container -->
         <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Penjualan Buku</span></strong>. All Rights Reserved
+            <!-- responsive-nav -->
+            <div id="responsive-nav">
+                <!-- NAV -->
+                <!-- /NAV -->
             </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/ -->
-                Designed by AF</a>
+            <!-- /responsive-nav -->
+        </div>
+        <!-- /container -->
+    </nav>
+    <!-- /NAVIGATION -->
+
+    <!-- SECTION -->
+
+    <!-- /SECTION -->
+
+    <!-- SECTION -->
+
+    <!-- /section title -->
+
+    <!-- Products tab & slick -->
+    <div class="col-md-12">
+        <div class="row">
+            <div class="products-tabs">
+                <!-- tab -->
+                <div id="tab1" class="tab-pane active">
+                    <div class="products-slick" data-nav="#slick-nav-1">
+
+                        <!-- product -->
+                        @foreach ($buku as $data)
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="{{ asset('image/buku/' . $data->cover) }}" alt="">
+                                    <div class="product-label">
+                                        <span class="new">NEW</span>
+                                    </div>
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">{{ $data->judul_buku }} </a></h3>
+                                    <h4 class="product-price">{{ $data->harga }} </h4>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> <a>add to
+                                            cart</a></button>
+                                </div>
+                            </div>
+                            <!-- /product -->
+                        @endforeach
+
+                    </div>
+                    <div id="slick-nav-1" class="products-slick-nav"></div>
+                </div>
+                <!-- /tab -->
             </div>
         </div>
-    </footer><!-- End Footer -->
+    </div>
+    <!-- Products tab & slick -->
+    </div>
+    <!-- /row -->
+    </div>
+    <!-- /container -->
+    </div>
+    <!-- /SECTION -->
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <!-- HOT DEAL SECTION -->
+    <div id="hot-deal" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /HOT DEAL SECTION -->
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- SECTION -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+                <!-- section title -->
+                <!-- /section title -->
+
+                <!-- Products tab & slick -->
+                <!-- /Products tab & slick -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /SECTION -->
+
+    <!-- SECTION -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /SECTION -->
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+        <!-- container -->
+
+        <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <!-- top footer -->
+        <div class="section">
+        </div>
+        <!-- /top footer -->
+
+        <!-- bottom footer -->
+        <div id="bottom-footer" class="section">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span class="copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made by adit
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </span>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /bottom footer -->
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- jQuery Plugins -->
+    <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/slick.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/nouislider.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.zoom.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/main.js') }}"></script>
 
 </body>
 
