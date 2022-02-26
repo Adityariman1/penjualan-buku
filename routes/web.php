@@ -4,6 +4,7 @@ use App\Http\Controllers\BukuController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LaporanpenjualanController;
 use App\Http\Controllers\PenjualanController;
+use App\Http\Controllers\PesanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,8 +22,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', 'App\Http\Controllers\BukuController@bukunya', function () {
-    return view('frontend.index');
+    return view('pesan.index');
 });
+
+Route::get('pesan/{id}', [App\Http\Controllers\PesanController::class, 'index']);
 
 Auth::routes();
 

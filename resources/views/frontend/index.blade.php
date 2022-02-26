@@ -58,13 +58,7 @@
 
                     <!-- SEARCH BAR -->
                     <div class="col-md-6">
-                        <div class="header-search">
-                            <form>
 
-                                <input class="input" placeholder="Search here">
-                                <button class="search-btn">Search</button>
-                            </form>
-                        </div>
                     </div>
                     <!-- /SEARCH BAR -->
 
@@ -172,7 +166,8 @@
                                     </div>
                                 </div>
                                 <div class="add-to-cart">
-                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> <a>add to
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> <a
+                                            href="{{ url('pesan', $data->id) }}">add to
                                             cart</a></button>
                                 </div>
                             </div>
